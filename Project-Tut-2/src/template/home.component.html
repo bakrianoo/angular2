@@ -1,0 +1,18 @@
+<!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Welcome To DevDose</h1>
+        <p>This is a demo blog :)</p>
+      </div>
+
+      <div class="row">
+
+        <div *ngFor="let blog of blogs" class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+            <img src="{{blog.thumbnailUrl}}" alt="{{blog.title}}">
+            <div class="caption">
+                <h3>{{blog.title}}</h3>
+                <p><a [routerLink]='["/blog", blog.id]' class="btn btn-primary" role="button">More</a> </p>
+            </div>
+            </div>
+        </div>
+    </div>

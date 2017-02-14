@@ -1,0 +1,28 @@
+<hr /><div class="row">
+    <form #studentForm="ngForm" (ngSubmit)="setSubmit(studentForm.value)">
+        <div class="from-group">
+            <label>Student Name: </label>
+            <input [(ngModel)]="userData.name" type="text" ngModel name="name" class="form-control" />
+        </div>
+        <div class="from-group">
+            <label>Email: </label>
+            <input [(ngModel)]="userData.email" type="text" ngModel name="email" class="form-control" />
+        </div>
+
+        <div ngModelGroup="course_work">
+            <div class="from-group">
+                <label>Class Work: </label>
+                <input [(ngModel)]="userData.class_work" type="text" ngModel name="class_work" class="form-control" />
+            </div>
+            <div class="from-group">
+                <label>Lab Work: </label>
+                <input [(ngModel)]="userData.lab_work" type="text" ngModel name="lab_work" class="form-control" />
+            </div>
+        </div>
+
+        <hr /><div class="from-group">
+            <input type="submit" name="submit" value="ok" class="btn btn-default" />
+        </div>
+    </form>
+    <h3>{{userData.name}}</h3>
+</div>

@@ -1,0 +1,1 @@
+<h2>About Component</h2>
