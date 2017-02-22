@@ -1,7 +1,5 @@
 # angular2
 
-**The Angular 2 Course Tuts Codes
-
 ### You can view the course at | استكشف الكورس بالكامل على
 
 > https://www.youtube.com/playlist?list=PLvLvlVqNQGHCHAmZthrc5YcTRydyUcA1V
